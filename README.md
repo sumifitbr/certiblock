@@ -58,3 +58,33 @@ Antes de iniciar, certifique-se de ter instalado:
    ```bash
    git clone https://github.com/sumifitbr/certiblock.git
    cd certiblock
+
+2. Configure as variáveis de ambiente:
+
+Crie um arquivo `.env` com o conteúdo:
+
+```env
+IPFS_API=/dns/ipfs/tcp/5001/http
+```
+
+3. Execute o Docker Compose:
+
+```bash
+docker-compose up --build
+```
+
+Acesse o frontend em [http://localhost:3000](http://localhost:3000) e o backend em [http://localhost:8000](http://localhost:8000).
+
+## Deploy com Easypanel
+
+1. Acesse o Easypanel e crie um novo projeto.
+2. Configure os serviços com Dockerfile para frontend e backend, e configure o IPFS como imagem Docker.
+3. Verifique os logs e inicie os serviços.
+
+## Contribuindo
+
+1. Fork o projeto
+2. Crie uma branch para sua feature
+3. Faça commit das suas mudanças
+4. Submeta um Pull Request
+            
